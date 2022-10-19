@@ -1,0 +1,224 @@
+$btn-color : hsl(183, 100%, 15%);
+$bg-color : hsl(185, 41%, 84%) ;
+$input-bg-color: hsl(189, 41%, 97%);
+$font-weight: 700;
+
+body {
+    background-color:  $bg-color ;
+}
+
+.header{
+   display: flex;
+   justify-content: center;
+   margin-block: 50px;
+}
+
+.mainContainer{
+    background-color : #fff;
+    border-radius : 20px;
+}
+
+.topSection{
+    padding: 30px;
+
+}
+
+.inputContainer { 
+    position: relative;
+
+    > input {
+    margin-block: 0 40px;
+    padding : 10px;
+    font-size: 16px;
+    width : 300px;
+    border : none;
+    border-radius: 5px;
+    background-color : $input-bg-color;
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: $font-weight;
+    color: $btn-color ;
+    font-size: 18px;
+    }
+
+    :focus{
+        outline: none;
+    }
+
+    > img {
+        position: absolute;
+        top : 15px;
+        left : 15px;
+    }
+}
+
+.btnContainer  {
+    display : grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap : 15px;
+    margin-bottom: 40px;
+
+    > input {
+        border : none;
+        padding : 10px;
+        background-color: $input-bg-color;
+        border-radius: 5px;
+    }
+
+    > button {
+        padding : 10px;
+        border: none;
+        border-radius: 5px;
+        background-color : $btn-color ;
+        color : #fff;
+        font-size: 20px;
+        font-family: 'Space Mono',sans-serif;
+        font-weight: $font-weight;
+        cursor: pointer;
+
+        :active{
+            background-color: $bg-color ;
+            color : $btn-color ;
+        }
+    }
+    
+}
+
+.peopleWrapper {
+    position: relative;
+
+    > input {
+        margin-block: 10px 40px;
+        padding : 10px;
+        font-size: 16px;
+        width : 300px;
+        border : none;
+        border-radius: 5px;
+        background-color : $input-bg-color;
+        text-align: right;
+        cursor: pointer;
+        font-family: 'Space Mono',sans-serif;
+        font-weight: $font-weight;
+        color: $btn-color;
+        font-size: 18px;
+
+        :focus{
+            outline: none;
+        }
+    }
+
+    > img {
+        position: absolute;
+        top : 20px;
+        left : 20px;
+    }
+
+}
+
+.bottomSection{
+    background-color: $btn-color ;
+    border: none;
+    border-radius: 20px;
+    padding-block : 50px 20px;
+    padding-inline : 20px;
+}
+
+.desc {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+
+    > p{
+        font-size: 20px;
+        font-family: 'Space Mono',sans-serif;
+        color : #fff;
+        font-weight: $font-weight;
+        > span {
+            opacity: 0.5;
+        }
+    }
+
+    div {
+        font-size: 30px;
+        font-family: 'Space Mono',sans-serif;
+        color : hsl(184, 14%, 56%);
+        font-weight: $font-weight;
+    }
+}
+
+.reset {
+    padding : 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(184, 14%, 56%);
+    font-size: 16px;
+    color : $btn-color ;
+    font-weight: $font-weight;
+    width : 280px;
+    cursor: pointer;
+}
+
+@media screen and (min-width : 1200px) {
+    .mainContainer {
+        display: flex;
+        width: 920px;
+        height : 490px;
+        margin : 0 auto;
+    }
+
+    .topSection {
+        width: 50%;
+    }
+
+    .bottomSection {
+        width : 50%;
+        margin-block : 35px;
+        margin-right: 35px;
+        padding-block : 50px 20px;
+        padding-inline : 20px;
+        position: relative;
+    }
+
+    .desc {
+        padding-inline : 40px;
+    }
+
+    .reset {
+        position: absolute;
+        bottom: 40px;
+        left : 40px;
+        width : 355px;
+        margin :  0 auto;
+    }
+
+    .inputContainer > input {
+        width : 379px;
+    }
+
+    .peopleWrapper > input {
+        position: relative;
+        width : 379px;
+        bottom : 20px;
+    }
+
+    .peopleWrapper > img {
+        position: absolute;
+        top : 7px;
+    }
+
+    .btnContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        width: 115px;
+    }
+
+    .btnContainer > input {
+        width : 95px;
+    }
+} 
