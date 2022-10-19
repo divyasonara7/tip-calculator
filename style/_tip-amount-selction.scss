@@ -1,0 +1,32 @@
+.btnContainer  {
+    display : grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap : 15px;
+    margin-bottom: 40px;
+
+    > input {
+        border : none;
+        padding : 10px;
+        background-color: $input-bg-color;
+        border-radius: 5px;
+    }
+
+    > button {
+        padding : 10px;
+        border: none;
+        border-radius: 5px;
+        background-color : $btn-color ;
+        color : #fff;
+        font-size: 20px;
+        font-family: $font-family;
+        font-weight: $font-weight;
+        cursor: pointer;
+
+        :active{
+            background-color: $bg-color ;
+            color : $btn-color ;
+        }
+    }
+    
+}
