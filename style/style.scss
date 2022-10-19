@@ -5,6 +5,8 @@ $font-weight: 700;
 $font-family: 'Space Mono',sans-serif;
 
 @import 'input';
+@import 'media';
+
 body {
     background-color:  $bg-color ;
 }
@@ -109,65 +111,3 @@ body {
     width : 280px;
     cursor: pointer;
 }
-
-@media screen and (min-width : 1200px) {
-    .mainContainer {
-        display: flex;
-        width: 920px;
-        height : 490px;
-        margin : 0 auto;
-    }
-
-    .topSection {
-        width: 50%;
-    }
-
-    .bottomSection {
-        width : 50%;
-        margin-block : 35px;
-        margin-right: 35px;
-        padding-block : 50px 20px;
-        padding-inline : 20px;
-        position: relative;
-    }
-
-    .desc {
-        padding-inline : 40px;
-    }
-
-    .reset {
-        position: absolute;
-        bottom: 40px;
-        left : 40px;
-        width : 355px;
-        margin :  0 auto;
-    }
-
-    .inputContainer > input {
-        width : 379px;
-    }
-
-    .peopleWrapper > input {
-        position: relative;
-        width : 379px;
-        bottom : 20px;
-    }
-
-    .peopleWrapper > img {
-        position: absolute;
-        top : 7px;
-    }
-
-    .btnContainer {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 0;
-    }
-
-    .btn {
-        width: 115px;
-    }
-
-    .btnContainer > input {
-        width : 95px;
-    }
-} 
