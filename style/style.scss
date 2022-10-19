@@ -2,6 +2,7 @@ $btn-color : hsl(183, 100%, 15%);
 $bg-color : hsl(185, 41%, 84%) ;
 $input-bg-color: hsl(189, 41%, 97%);
 $font-weight: 700;
+$font-family: 'Space Mono',sans-serif;
 
 @import 'input';
 body {
@@ -49,7 +50,7 @@ body {
         background-color : $btn-color ;
         color : #fff;
         font-size: 20px;
-        font-family: 'Space Mono',sans-serif;
+        font-family: $font-family;
         font-weight: $font-weight;
         cursor: pointer;
 
@@ -81,7 +82,7 @@ body {
 
     > p{
         font-size: 20px;
-        font-family: 'Space Mono',sans-serif;
+        font-family: $font-family;
         color : #fff;
         font-weight: $font-weight;
         > span {
@@ -91,7 +92,7 @@ body {
 
     div {
         font-size: 30px;
-        font-family: 'Space Mono',sans-serif;
+        font-family: $font-family;
         color : hsl(184, 14%, 56%);
         font-weight: $font-weight;
     }
