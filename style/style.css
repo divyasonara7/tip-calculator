@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 .inputContainer > input {
-  margin-block: 0 40px;
+  margin-block: 0px 40px;
   padding: 10px;
   font-size: 16px;
   width: 300px;
@@ -35,7 +35,7 @@ body {
   color: hsl(183deg, 100%, 15%);
   font-size: 18px;
 }
-.inputContainer :focus {
+.inputContainer > input :focus {
   outline: none;
 }
 .inputContainer > img {
