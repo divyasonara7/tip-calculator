@@ -1,3 +1,6 @@
 # tip-calculator
 
-aim of this project is to learn Scss concepts.
+This design is developed using Sass (short for syntactically awesome style sheets).
+
+
+![image](https://user-images.githubusercontent.com/116076511/196655742-eeac53c1-2352-4443-bd49-2157ca11b920.png)
