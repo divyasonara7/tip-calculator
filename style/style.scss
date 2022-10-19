@@ -3,6 +3,7 @@ $bg-color : hsl(185, 41%, 84%) ;
 $input-bg-color: hsl(189, 41%, 97%);
 $font-weight: 700;
 
+@import 'input';
 body {
     background-color:  $bg-color ;
 }
@@ -24,33 +25,7 @@ body {
 }
 
 .inputContainer { 
-    position: relative;
-
-    > input {
-    margin-block: 0 40px;
-    padding : 10px;
-    font-size: 16px;
-    width : 300px;
-    border : none;
-    border-radius: 5px;
-    background-color : $input-bg-color;
-    text-align: right;
-    cursor: pointer;
-    font-family: 'Space Mono',sans-serif;
-    font-weight: $font-weight;
-    color: $btn-color ;
-    font-size: 18px;
-    }
-
-    :focus{
-        outline: none;
-    }
-
-    > img {
-        position: absolute;
-        top : 15px;
-        left : 15px;
-    }
+    @include primary-input(0px,40px,15px,15px);
 }
 
 .btnContainer  {
@@ -87,34 +62,7 @@ body {
 }
 
 .peopleWrapper {
-    position: relative;
-
-    > input {
-        margin-block: 10px 40px;
-        padding : 10px;
-        font-size: 16px;
-        width : 300px;
-        border : none;
-        border-radius: 5px;
-        background-color : $input-bg-color;
-        text-align: right;
-        cursor: pointer;
-        font-family: 'Space Mono',sans-serif;
-        font-weight: $font-weight;
-        color: $btn-color;
-        font-size: 18px;
-
-        :focus{
-            outline: none;
-        }
-    }
-
-    > img {
-        position: absolute;
-        top : 20px;
-        left : 20px;
-    }
-
+    @include primary-input(10px,40px,20px,20px);
 }
 
 .bottomSection{
