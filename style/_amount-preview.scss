@@ -1,0 +1,43 @@
+.bottomSection{
+    background-color: $btn-color ;
+    border: none;
+    border-radius: 20px;
+    padding-block : 50px 20px;
+    padding-inline : 20px;
+}
+
+.desc {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+
+    > p{
+        font-size: 20px;
+        font-family: $font-family;
+        color : #fff;
+        font-weight: $font-weight;
+        > span {
+            opacity: 0.5;
+        }
+    }
+
+    div {
+        font-size: 30px;
+        font-family: $font-family;
+        color : hsl(184, 14%, 56%);
+        font-weight: $font-weight;
+    }
+}
+
+.reset {
+    padding : 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(184, 14%, 56%);
+    font-size: 16px;
+    color : $btn-color ;
+    font-weight: $font-weight;
+    width : 280px;
+    cursor: pointer;
+}
